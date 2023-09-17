@@ -15,9 +15,9 @@
             <div class="col-sm-12 col-md-6 col-xl-4 <?= $i == 0 ? 'd-none d-md-block' : '' ?>">
               <div class="card mb-3 border-0">
                 <div class="card-body px-0">
-                  <a href="<?= base_url('post/' . $post['slug']) ?>" class="text-decoration-none text-dark link-feature">
-                    <img src="<?= base_url('assets/img/bg-hero.png') ?>" class="img-fluid rounded-0" style="height: 300px; object-fit: cover;" alt="...">
-                    <h5 class="card-title my-3"><?= $post['category'] ?> - <span class="text-muted small"><?= $post['title'] ?></span></h5>
+                  <a href="<?= base_url('posts/' . $post->slug) ?>" class="text-decoration-none text-dark link-feature">
+                    <img src="<?= $post->image ?>" class="img-fluid rounded-0 w-100" style="height: 300px; object-fit: cover;" alt="Artikel <?= $post->title ?>">
+                    <h5 class="card-title my-3"><?= $post->content_type ?> - <span class="text-muted small"><?= $post->title ?></span></h5>
                   </a>
                   <p class="card-text mb-0">This is a wider card with supporting text below as a natural lead-in to additional content.</p>                
                 </div>
@@ -26,7 +26,7 @@
           <?php endforeach; ?>
         </div>
         <div class="d-flex flex-row justify-content-end mt-5">
-          <a href="https://codeigniter.com/user_guide/index.html" target="_blank" class="btn btn-outline-dark btn-lg rounded-0" role="button">Lihat Semua <i class="bi bi-arrow-right"></i></a>
+          <a href="<?= base_url('posts') ?>" class="btn btn-outline-dark btn-lg rounded-0" role="button">Lihat Semua <i class="bi bi-arrow-right"></i></a>
         </div>
       </div>
     </div>

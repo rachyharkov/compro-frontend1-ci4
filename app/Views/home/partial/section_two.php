@@ -2,7 +2,7 @@
   <div class="container py-5">
     <div class="row py-5">
       <div class="col-md-10 row mx-auto py-5">
-        <div class="col-md-6">
+        <div class="col-md-6 d-flex flex-column justify-content-center">
           <h1 class="display-4 text-white fw-semibold">Program Studi</h1>
           <p class="lead mt-3 py-2 text-white">Poltekkes Hermina Menciptakan dan Menghasilkan Tenaga Ahli di Bidang Farmasi Melalui Prodi D-III Farmasi</p>
           <a href="https://codeigniter.com/user_guide/index.html" target="_blank" class="btn btn-outline-light btn-lg" role="button">Tentang Prodi</a>

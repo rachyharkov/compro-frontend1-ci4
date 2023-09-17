@@ -4,7 +4,7 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 70vh;
+    height: 100vh;
     position: relative;
   }
 
@@ -54,10 +54,9 @@
   <div class="mask bg-gradient-dark"></div>
   <div class="container-fluid d-flex align-items-center justify-content-center h-100 position-absolute top-0">
     <div class="row d-flex justify-content-center text-center">
-      <div class="col-md-7">
-        <h2 class="display-3 font-weight-bold text-white mb-2 mt-5 mt-md-0 mb-md-5 fw-semibold">Politeknik Kesehatan Hermina</h2>
+      <div class="col-md-7 mb-5 pb-5">
+        <h2 class="display-2 font-weight-bold text-white mb-2 mt-5 mt-md-0 mb-md-5 fw-semibold" style="font-family: 'Belleza', sans-serif;">Public Service,<br>Public Good</h2>
         <h5 class="text-white">Menjadi Pusat Pendidikan Vokasional dan Pengembangan IPTEK yang unggul di bidang kesehatan berbasis kearifan lokal tahun 2032</h5>
-        <a href="https://codeigniter.com/user_guide/index.html" target="_blank" class="btn btn-outline-light btn-lg mt-5" role="button">Tentang Kampus</a>
       </div>
     </div>
   </div>

@@ -22,7 +22,7 @@
 <head> 
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <!-- Primary Meta Tags -->
-    <title><?= $configuration->title ?> - Beranda</title>
+    <title><?= $post->title ?></title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="title" content="Sign in - Title">
@@ -59,9 +59,9 @@
 </head>
 
 <body>
-  <?= $this->include('layouts/partial/navbar') ?>
+  <?= $this->include('layouts/partial/navbar_article') ?>
   <main>
-  <?= $this->renderSection('content') ?>
+    <?= $this->renderSection('content') ?>
   </main>
   <?= $this->include('layouts/partial/script') ?>
 </body>
