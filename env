@@ -14,13 +14,15 @@
 # ENVIRONMENT
 #--------------------------------------------------------------------
 
-# CI_ENVIRONMENT = production
+CI_ENVIRONMENT = development
 
 #--------------------------------------------------------------------
 # APP
 #--------------------------------------------------------------------
 
-# app.baseURL = ''
+app.baseURL = 'http://localhost:8081'
+app.mainURL = 'http://localhost:8080'
+domain_name = 'domain1'
 # If you have trouble with `.`, you could also use `_`.
 # app_baseURL = ''
 # app.forceGlobalSecureRequests = false
@@ -30,13 +32,21 @@
 # DATABASE
 #--------------------------------------------------------------------
 
-# database.default.hostname = localhost
-# database.default.database = ci4
-# database.default.username = root
-# database.default.password = root
-# database.default.DBDriver = MySQLi
-# database.default.DBPrefix =
-# database.default.port = 3306
+database.default.hostname = localhost
+database.default.database = db_company_web1
+database.default.username = root
+database.default.password =
+database.default.DBDriver = MySQLi
+database.default.DBPrefix =
+database.default.port = 3306
+
+database.cms.hostname = localhost
+database.cms.database = db_company_main
+database.cms.username = root
+database.cms.password =
+database.cms.DBDriver = MySQLi
+database.cms.DBPrefix =
+database.cms.port = 3306
 
 # database.tests.hostname = localhost
 # database.tests.database = ci4_test
@@ -89,7 +99,7 @@
 # ENCRYPTION
 #--------------------------------------------------------------------
 
-# encryption.key =
+encryption.key = hex2bin:47e6c0a1d78e4142e031b64c0b07e23b1097d9b79309a6f61c0f0b98a531e2b4
 # encryption.driver = OpenSSL
 # encryption.blockSize = 16
 # encryption.digest = SHA512
